@@ -1,0 +1,574 @@
+.header {
+
+}
+
+.header__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__brand {
+  font-size: 1.5em;
+}
+
+.header__pages {
+  flex-grow: 1;
+  padding: 0 2rem;
+}
+.header__pages a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: .9rem;
+}
+
+.header__buttons {
+  display: flex;
+}
+
+.header__button {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 8px 15px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/**/
+
+.banner {
+  padding: 50px 0;
+}
+
+.banner__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner__left {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.banner__subtitle {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.banner__title {
+  font-size: 2.5em;
+  margin: 10px 0;
+  color: #333;
+}
+
+.banner__description {
+  color: #666;
+}
+
+.banner__buttons {
+  margin-top: 20px;
+}
+
+.banner__button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.banner__right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/**/
+
+.watch-courses {
+  padding: 50px 0;
+}
+
+.watch-courses__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.watch-courses__left img {
+  max-width: 100%;
+  width: 50%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.watch-courses__right {
+  width: 50%;
+  padding-left: 20px;
+}
+
+.watch-courses__title {
+  font-size: 2.5em;
+  margin: 0;
+  padding-top: 5px;
+  border-top: 3px solid #333;
+  color: #333;
+}
+
+.watch-courses__description {
+  color: #666;
+  margin-top: 20px;
+}
+
+.watch-courses__button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/**/
+
+.our-popular {
+  padding: 50px 0;
+}
+
+.our-popular__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.our-popular__left {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.our-popular__title {
+  font-size: 2.5em;
+  margin: 0;
+  padding-top: 5px;
+  border-top: 3px solid #333;
+  color: #333;
+}
+
+.our-popular__description {
+  color: #666;
+  margin-top: 20px;
+}
+
+.our-popular__button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.our-popular__right {
+  display: flex;
+  gap: 20px;
+}
+
+.our-popular__card {
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.our-popular__card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.our-popular__name {
+  font-size: 1.5em;
+  margin: 0;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.our-popular__card-description {
+  padding: 15px;
+  color: #666;
+}
+
+/**/
+
+.every-client-matter {
+  padding: 50px 0;
+}
+
+.every-client-matter__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.every-client-matter__subtitle {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.every-client-matter__title {
+  font-size: 2.5em;
+  margin: 10px 0;
+  border-top: 3px solid #333;
+  color: #333;
+}
+
+.every-client-matter__short-description {
+  max-width: 600px;
+  margin-top: 20px;
+  color: #666;
+}
+
+.every-client-matter__cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.every-client-matter__card {
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  margin-top: 20px;
+}
+
+.every-client-matter__card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.every-client-matter__seal {
+  background-color: #ff4500;
+  color: #fff;
+  padding: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.every-client-matter__join-us {
+  padding: 5px;
+  background-color: #333;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.every-client-matter__star-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: #f0f0f0;
+}
+
+.every-client-matter__star {
+  color: #ffd700;
+  font-size: 1.2em;
+}
+
+.every-client-matter__rating-note {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.every-client-matter__card-title {
+  font-size: 1.5em;
+  margin: 0;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.every-client-matter__card-description {
+  padding: 15px;
+  color: #666;
+}
+
+.every-client-matter__download {
+  padding: 10px;
+  color: #333;
+}
+
+.every-client-matter__learn-more {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/**/
+
+.testimonials {
+  padding: 50px 0;
+}
+
+.testimonials__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonials__subtitle {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.testimonials__title {
+  font-size: 2.5em;
+  margin: 10px 0;
+  border-top: 3px solid #333;
+  color: #333;
+}
+
+.testimonials__description {
+  max-width: 600px;
+  margin-top: 20px;
+  color: #666;
+}
+
+.testimonials__cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.testimonials__card {
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.testimonials__commentary {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.testimonials__rating {
+  display: flex;
+  color: #ffd700;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.testimonials__star {
+  margin-right: 5px;
+}
+
+.testimonials__info {
+  display: flex;
+  align-items: center;
+}
+
+.testimonials__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #333;
+  margin-right: 10px;
+  /* Add an icon or image here */
+}
+
+.testimonials__details {
+  color: #333;
+}
+
+.testimonials__name {
+  font-weight: bold;
+  margin: 0;
+}
+
+.testimonials__profile {
+  margin: 0;
+  color: #666;
+}
+
+/**/
+
+.faq {
+  padding: 50px 0;
+}
+
+.faq__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.faq__title {
+  font-size: 2.5em;
+  margin: 10px 0;
+  color: #333;
+}
+
+.faq__description {
+  max-width: 800px;
+  margin: 20px auto;
+  color: #666;
+}
+
+.faq__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.faq__card {
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 10px;
+  padding: 15px;
+  text-align: left;
+}
+
+.faq__arrow {
+  font-size: 1.5em;
+  margin-right: 5px;
+  color: #333;
+}
+
+.faq__question {
+  margin: 0;
+  color: #333;
+}
+
+/**/
+
+.newsletter {
+  padding: 50px 0;
+}
+
+.newsletter__wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.newsletter__subtitle {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.newsletter__title {
+  font-size: 2.5em;
+  margin: 10px 0;
+  color: #333;
+}
+
+.newsletter__description {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.newsletter__form {
+  display: flex;
+  justify-content: center;
+}
+
+.newsletter__input {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.newsletter__button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+/**/
+
+.footer {
+  background-color: #fff;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.footer__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer__pages {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer__section {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.footer__section-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.footer__section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__section li {
+  margin-bottom: 5px;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.footer__made-with-love {
+  margin: 0;
+  font-size: 1em;
+}
+
+.footer__social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.footer__social-icon img {
+  width: 30px; /* Adjust the size of your social icons */
+  height: 30px; /* Adjust the size of your social icons */
+  border-radius: 50%;
+}
