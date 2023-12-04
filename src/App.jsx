@@ -1,25 +1,27 @@
 import { useState } from 'react'
 import './App.css'
-import Background  from "./assets/background.png"
-import Background1  from "./assets/product.png"
+import Background from "./assets/background.png"
+import Background1 from "./assets/product.png"
+import { FaBars } from "react-icons/fa"
 
 function App() {
 
   return (
     <>
 
-      <header className="header">
-        <div className="header__wrapper">
-          <div className="header__brand">Brand Name</div>
-          <nav className="header__pages">
+      <header class="header">
+        <div class="header__wrapper">
+          <div class="header__brand">Brand Name</div>
+          <nav class="header__pages">
             <a href="#">Home</a>
             <a href="#">About</a>
             <a href="#">Contact</a>
           </nav>
-          <div className="header__buttons">
-            <button className="header__button">Login</button>
-            <button className="header__button header__button--join">Join us</button>
+          <div class="header__buttons">
+            <button class="header__button">Login</button>
+            <button class="header__button header__button--join">Join us</button>
           </div>
+          <button class="header__mobile-button"><FaBars /></button>
         </div>
       </header>
 
@@ -53,40 +55,32 @@ function App() {
         </div>
       </section>
 
-
-      <section className="our-popular">
-        <div className="our-popular__wrapper">
-          <div className="our-popular__left">
-            <h2 className="our-popular__title">Our Popular</h2>
-            <p className="our-popular__description">Discover our most popular courses and join thousands of learners who have benefited from our expert-led content. Take your skills to the next level.</p>
-            <button className="our-popular__button">Explore Courses</button>
+      <section class="our-popular">
+        <div class="our-popular__wrapper">
+          <div class="our-popular__left">
+            <h2 class="our-popular__title">Our Popular</h2>
+            <p class="our-popular__description">Discover our most popular courses and join thousands of learners who have benefited from our expert-led content. Take your skills to the next level.</p>
+            <button class="our-popular__button">Explore Courses</button>
           </div>
-          <div className="our-popular__right">
-            <div className="our-popular__card">
+          <div class="our-popular__right">
+            <div class="our-popular__card">
               <img src="your-image-url1.jpg" alt="Popular Course 1" />
-              <h3 className="our-popular__name">training Courses</h3>
-              <p className="our-popular__card-description">The gradual
-                accumulation of
-                information about </p>
+              <h3 class="our-popular__name">Training Courses</h3>
+              <p class="our-popular__card-description">The gradual accumulation of information about </p>
             </div>
-            <div className="our-popular__card">
+            <div class="our-popular__card">
               <img src="your-image-url2.jpg" alt="Popular Course 2" />
-              <h3 className="our-popular__name">2,769 online courses	</h3>
-              <p className="our-popular__card-description">The gradual
-                accumulation of
-                information about </p>
+              <h3 class="our-popular__name">2,769 online courses	</h3>
+              <p class="our-popular__card-description">The gradual accumulation of information about </p>
             </div>
-            <div className="our-popular__card">
+            <div class="our-popular__card">
               <img src="your-image-url2.jpg" alt="Popular Course 2" />
-              <h3 className="our-popular__name">Books Liberary	</h3>
-              <p className="our-popular__card-description">The gradual
-                accumulation of
-                information about </p>
+              <h3 class="our-popular__name">Books Library	</h3>
+              <p class="our-popular__card-description">The gradual accumulation of information about </p>
             </div>
           </div>
         </div>
       </section>
-
 
       <section className="every-client-matter">
         <div className="every-client-matter__wrapper">
