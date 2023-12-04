@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import './App.css'
+import Background  from "./assets/background.png"
+import Background1  from "./assets/product.png"
 
 function App() {
 
@@ -15,8 +17,8 @@ function App() {
             <a href="#">Contact</a>
           </nav>
           <div className="header__buttons">
-            <button className="header__button">Button 1</button>
-            <button className="header__button">Button 2</button>
+            <button className="header__button">Login</button>
+            <button className="header__button header__button--join">Join us</button>
           </div>
         </div>
       </header>
@@ -28,12 +30,12 @@ function App() {
             <h1 className="banner__title">HIGH QUALITY COURSES</h1>
             <p className="banner__description">Find the right instructor for you from over 10,000 teachers</p>
             <div className="banner__buttons">
-              <button className="banner__button">Get Quote Now</button>
+              <button className="banner__button banner__button--get">Get Quote Now</button>
               <button className="banner__button">Learn More</button>
             </div>
           </div>
           <div className="banner__right">
-            <img src="https://via.placeholder.com/600x500" alt="Banner Image" />
+            {/* <img src={Background} alt="Banner Image" /> */}
           </div>
         </div>
       </section>
@@ -41,7 +43,7 @@ function App() {
       <section className="watch-courses">
         <div className="watch-courses__wrapper">
           <div className="watch-courses__left">
-            <img src="your-image-url.jpg" alt="Courses Image" />
+            {/* <img src="your-image-url.jpg" alt="Courses Image" /> */}
           </div>
           <div className="watch-courses__right">
             <h2 className="watch-courses__title">Watch Our Courses</h2>
@@ -93,43 +95,55 @@ function App() {
           <p className="every-client-matter__short-description">Problems trying to resolve the conflict between  the two major realms of Classical physics: Newtonian mechanics </p>
           <div className="every-client-matter__cards">
             <div className="every-client-matter__card">
-              <img src="your-image-url1.jpg" alt="Client Matter Image 1" />
-              <div className="every-client-matter__seal">Sale</div>
-              <span className="every-client-matter__join-us">Join Us</span>
-              <div className="every-client-matter__star-rating">
-                <span className="every-client-matter__star">&#9733;</span>
-                <span className="every-client-matter__rating-note">4.5</span>
+              <img src={Background1} alt="Client Matter Image 1" />
+              <div className="every-client-matter__info">
+                <div className="every-client-matter__seal">Sale</div>
+                <header className="every-client-matter__header">
+                  <span className="every-client-matter__join-us">Join Us</span>
+                  <div className="every-client-matter__star-rating">
+                    <span className="every-client-matter__star">&#9733;</span>
+                    <span className="every-client-matter__rating-note">4.5</span>
+                  </div>
+                </header>
+                <h3 className="every-client-matter__card-title">Card Title 1</h3>
+                <p className="every-client-matter__card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p className="every-client-matter__download">Downloads: 1000+</p>
+                <button className="every-client-matter__learn-more">Learn More</button>
               </div>
-              <h3 className="every-client-matter__card-title">Card Title 1</h3>
-              <p className="every-client-matter__card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <p className="every-client-matter__download">Downloads: 1000+</p>
-              <button className="every-client-matter__learn-more">Learn More</button>
             </div>
             <div className="every-client-matter__card">
-              <img src="your-image-url2.jpg" alt="Client Matter Image 2" />
-              <div className="every-client-matter__seal">Sale</div>
-              <span className="every-client-matter__join-us">Join Us</span>
-              <div className="every-client-matter__star-rating">
-                <span className="every-client-matter__star">&#9733;</span>
-                <span className="every-client-matter__rating-note">4.5</span>
+              <img src={Background1} alt="Client Matter Image 2" />
+              <div className="every-client-matter__info">
+                <div className="every-client-matter__seal">Sale</div>
+                <header className="every-client-matter__header">
+                  <span className="every-client-matter__join-us">Join Us</span>
+                  <div className="every-client-matter__star-rating">
+                    <span className="every-client-matter__star">&#9733;</span>
+                    <span className="every-client-matter__rating-note">4.5</span>
+                  </div>
+                </header>
+                <h3 className="every-client-matter__card-title">Card Title 2</h3>
+                <p className="every-client-matter__card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p className="every-client-matter__download">Downloads: 800+</p>
+                <button className="every-client-matter__learn-more">Learn More</button>
               </div>
-              <h3 className="every-client-matter__card-title">Card Title 2</h3>
-              <p className="every-client-matter__card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <p className="every-client-matter__download">Downloads: 800+</p>
-              <button className="every-client-matter__learn-more">Learn More</button>
             </div>
             <div className="every-client-matter__card">
-              <img src="your-image-url3.jpg" alt="Client Matter Image 3" />
-              <div className="every-client-matter__seal">Sale</div>
-              <span className="every-client-matter__join-us">Join Us</span>
-              <div className="every-client-matter__star-rating">
-                <span className="every-client-matter__star">&#9733;</span>
-                <span className="every-client-matter__rating-note">4.5</span>
+              <img src={Background1} alt="Client Matter Image 3" />
+              <div className="every-client-matter__info">
+                <div className="every-client-matter__seal">Sale</div>
+                <header className="every-client-matter__header">
+                  <span className="every-client-matter__join-us">Join Us</span>
+                  <div className="every-client-matter__star-rating">
+                    <span className="every-client-matter__star">&#9733;</span>
+                    <span className="every-client-matter__rating-note">4.5</span>
+                  </div>
+                </header>
+                <h3 className="every-client-matter__card-title">Card Title 3</h3>
+                <p className="every-client-matter__card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p className="every-client-matter__download">Downloads: 1200+</p>
+                <button className="every-client-matter__learn-more">Learn More</button>
               </div>
-              <h3 className="every-client-matter__card-title">Card Title 3</h3>
-              <p className="every-client-matter__card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <p className="every-client-matter__download">Downloads: 1200+</p>
-              <button className="every-client-matter__learn-more">Learn More</button>
             </div>
           </div>
         </div>
@@ -142,7 +156,6 @@ function App() {
           <p className="testimonials__description">What our learners say about the quality of education provided.</p>
           <div className="testimonials__cards">
             <div className="testimonials__card">
-              <p className="testimonials__commentary">"Exceptional courses! The content is well-structured and the instructors are knowledgeable. Highly recommended!"</p>
               <div className="testimonials__rating">
                 <span className="testimonials__star">&#9733;</span>
                 <span className="testimonials__star">&#9733;</span>
@@ -150,6 +163,45 @@ function App() {
                 <span className="testimonials__star">&#9733;</span>
                 <span className="testimonials__star">&#9733;</span>
               </div>
+              <p className="testimonials__commentary">"Exceptional courses! The content is well-structured and the instructors are knowledgeable. Highly recommended!"</p>
+              <div className="testimonials__info">
+                <div className="testimonials__icon">
+
+                </div>
+                <div className="testimonials__details">
+                  <p className="testimonials__name">John Doe</p>
+                  <p className="testimonials__profile">Web Developer</p>
+                </div>
+              </div>
+            </div>
+            <div className="testimonials__card">
+              <div className="testimonials__rating">
+                <span className="testimonials__star">&#9733;</span>
+                <span className="testimonials__star">&#9733;</span>
+                <span className="testimonials__star">&#9733;</span>
+                <span className="testimonials__star">&#9733;</span>
+                <span className="testimonials__star">&#9733;</span>
+              </div>
+              <p className="testimonials__commentary">"Exceptional courses! The content is well-structured and the instructors are knowledgeable. Highly recommended!"</p>
+              <div className="testimonials__info">
+                <div className="testimonials__icon">
+
+                </div>
+                <div className="testimonials__details">
+                  <p className="testimonials__name">John Doe</p>
+                  <p className="testimonials__profile">Web Developer</p>
+                </div>
+              </div>
+            </div>
+            <div className="testimonials__card">
+              <div className="testimonials__rating">
+                <span className="testimonials__star">&#9733;</span>
+                <span className="testimonials__star">&#9733;</span>
+                <span className="testimonials__star">&#9733;</span>
+                <span className="testimonials__star">&#9733;</span>
+                <span className="testimonials__star">&#9733;</span>
+              </div>
+              <p className="testimonials__commentary">"Exceptional courses! The content is well-structured and the instructors are knowledgeable. Highly recommended!"</p>
               <div className="testimonials__info">
                 <div className="testimonials__icon">
 
@@ -172,10 +224,32 @@ function App() {
             <div className="faq__card">
               <span className="faq__arrow">&rarr;</span>
               <p className="faq__question">Question 1: What is Lorem Ipsum?</p>
+              <p className="faq__answer">Lorem Ipsum dolor sit amet</p>
+            </div>
+            <div className="faq__card">
+              <span className="faq__arrow">&rarr;</span>
+              <p className="faq__question">Question 1: What is Lorem Ipsum?</p>
+              <p className="faq__answer">Lorem Ipsum dolor sit amet</p>
+            </div>
+            <div className="faq__card">
+              <span className="faq__arrow">&rarr;</span>
+              <p className="faq__question">Question 1: What is Lorem Ipsum?</p>
+              <p className="faq__answer">Lorem Ipsum dolor sit amet</p>
+            </div>
+            <div className="faq__card">
+              <span className="faq__arrow">&rarr;</span>
+              <p className="faq__question">Question 1: What is Lorem Ipsum?</p>
+              <p className="faq__answer">Lorem Ipsum dolor sit amet</p>
+            </div>
+            <div className="faq__card">
+              <span className="faq__arrow">&rarr;</span>
+              <p className="faq__question">Question 1: What is Lorem Ipsum?</p>
+              <p className="faq__answer">Lorem Ipsum dolor sit amet</p>
             </div>
             <div className="faq__card">
               <span className="faq__arrow">&rarr;</span>
               <p className="faq__question">Question 2: How do I get started?</p>
+              <p className="faq__answer">Lorem Ipsum dolor sit amet</p>
             </div>
           </div>
         </div>
