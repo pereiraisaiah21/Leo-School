@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 import Background from "./assets/background.png"
-import Background1 from "./assets/product.png"
 import { FaBars } from "react-icons/fa"
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -9,6 +8,10 @@ import 'swiper/css';
 import { Header } from './components/Header/Header'
 import { Banner } from './components/Banner/Banner'
 import { WatchOurCourses } from './components/WatchOurCourses/WatchOurCourses'
+import { OurPopularCourses } from './components/OurPopularCourses/OurPopularCourses'
+import { ClientMatter } from './components/ClientMatter/ClientMatter'
+import { Testimonial } from './components/Testimonial/Testimonial'
+import { FAQ } from './components/FAQ/FAQ';
 
 function App() {
 
@@ -20,6 +23,10 @@ function App() {
 <Header />
 <Banner />
 <WatchOurCourses />
+<OurPopularCourses />
+<ClientMatter />
+<Testimonial />
+<FAQ />
 
       {/* <header className="header">
         <div className="header__wrapper">
@@ -67,7 +74,7 @@ function App() {
         </div>
       </section> */}
 
-      <section className="our-popular">
+      {/* <section className="our-popular">
         <div className="our-popular__wrapper">
           <div className="our-popular__left">
             <h2 className="our-popular__title">Our Popular</h2>
@@ -105,9 +112,9 @@ function App() {
           </Swiper>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className="every-client-matter">
+      {/* <section className="every-client-matter">
         <div className="every-client-matter__wrapper">
           <span className="every-client-matter__subtitle">Every Client Matter</span>
           <h2 className="every-client-matter__title">Title</h2>
@@ -179,9 +186,9 @@ function App() {
           </Swiper>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className="testimonials">
+      {/* <section className="testimonials">
         <div className="testimonials__wrapper">
           <span className="testimonials__subtitle">Testimonials</span>
           <h2 className="testimonials__title">Quality Education</h2>
@@ -280,9 +287,9 @@ function App() {
           </Swiper>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className="faq">
+      {/* <section className="faq">
         <div className="faq__wrapper">
           <h2 className="faq__title">Frequently Asked Questions</h2>
           <p className="faq__description">Find answers to common questions below.</p>
@@ -319,7 +326,7 @@ function App() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="newsletter">
         <div className="newsletter__wrapper">
