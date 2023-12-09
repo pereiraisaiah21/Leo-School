@@ -6,6 +6,9 @@ import { FaBars } from "react-icons/fa"
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import { Header } from './components/Header/Header'
+import { Banner } from './components/Banner/Banner'
+import { WatchOurCourses } from './components/WatchOurCourses/WatchOurCourses'
 
 function App() {
 
@@ -14,7 +17,11 @@ function App() {
   return (
     <>
 
-      <header className="header">
+<Header />
+<Banner />
+<WatchOurCourses />
+
+      {/* <header className="header">
         <div className="header__wrapper">
           <div className="header__brand">Brand Name</div>
           <nav className="header__pages">
@@ -28,9 +35,9 @@ function App() {
           </div>
           <button className="header__mobile-button"><FaBars /></button>
         </div>
-      </header>
+      </header> */}
 
-      <section className="banner">
+      {/* <section className="banner">
         <div className="banner__wrapper">
           <div className="banner__left">
             <span className="banner__subtitle">For better future</span>
@@ -42,15 +49,15 @@ function App() {
             </div>
           </div>
           <div className="banner__right">
-            {/* <img src={Background} alt="Banner Image" /> */}
+            <img src={Background} alt="Banner Image" />
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className="watch-courses">
+      {/* <section className="watch-courses">
         <div className="watch-courses__wrapper">
           <div className="watch-courses__left">
-            {/* <img src="your-image-url.jpg" alt="Courses Image" /> */}
+            <img src="your-image-url.jpg" alt="Courses Image" />
           </div>
           <div className="watch-courses__right">
             <h2 className="watch-courses__title">Watch Our Courses</h2>
@@ -58,7 +65,7 @@ function App() {
             <button className="watch-courses__button">Learn More</button>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="our-popular">
         <div className="our-popular__wrapper">
