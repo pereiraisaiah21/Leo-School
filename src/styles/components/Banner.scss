@@ -1,0 +1,91 @@
+.banner {
+    padding: 50px 0;
+    height: calc(100vh - 130px);
+
+    &__wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__left {
+        width: 50%;
+    }
+
+    &__subtitle {
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.5rem;
+        letter-spacing: 0.00625rem;
+        color: var(--primary-color, #8D5CF6);
+    }
+
+    &__title {
+        color: var(--light-text-color, #FFF);
+        font-size: 3.625rem;
+        font-style: normal;
+        font-weight: 700;
+        margin: 2rem 0;
+        letter-spacing: 0.0125rem;
+    }
+
+    &__description {
+        color: var(--light-text-color, #FFF);
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.875rem;
+        letter-spacing: 0.0125rem;
+    }
+
+    &__buttons {
+        margin-top: 20px;
+    }
+
+    &__button {
+        background-color: none;
+        color: #fff;
+        padding: 10px 20px;
+        margin-right: 10px;
+        cursor: pointer;
+        border-radius: 0.3125rem;
+        border: 1px solid var(--light-gray-2, #ECECEC);
+
+        &--get {
+            border-radius: 0.3125rem;
+            background: var(--primary-color, #8D5CF6);
+        }
+    }
+
+    &__right {
+        width: 50%;
+        background: url("./assets/HeadlineBackground.png") no-repeat;
+        height: 500px;
+        min-height: 30px;
+        background-size: cover;
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        padding: 3rem 1rem;
+        background: url("./assets/HeadlineBackground.png") no-repeat;
+        background-size: contain;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/HeadlineBackground.png');
+
+        &__left {
+            width: 100%;
+        }
+
+        &__right {
+            display: none;
+        }
+    }
+}

@@ -1,4 +1,4 @@
-.header {
+/* .header {
   position: relative;
 }
 
@@ -82,11 +82,11 @@
   .header__mobile-button {
     display: block;
   }
-}
+} */
 
 /**/
 
-.banner {
+/* .banner {
   padding: 50px 0;
   height: calc(100vh - 130px);
 }
@@ -151,7 +151,7 @@
 
 .banner__right {
   width: 50%;
-  background: url("./assets/background.png") no-repeat;
+  background: url("./assets/HeadlineBackground.png") no-repeat;
   height: 500px;
   min-height: 30px;
   background-size: cover;
@@ -166,9 +166,9 @@
 @media only screen and (max-width: 600px) {
   .banner {
     padding: 3rem 1rem;
-    background: url("./assets/background.png") no-repeat;
+    background: url("./assets/HeadlineBackground.png") no-repeat;
     background-size: contain;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/background.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/HeadlineBackground.png');
   }
   
   .banner__left {
@@ -177,11 +177,11 @@
   .banner__right {
     display: none;
   }
-}
+} */
 
 /**/
 
-.watch-courses {
+/* .watch-courses {
   padding: 50px 0;
   background-color: #8d5cf6;
 }
@@ -196,7 +196,7 @@
 
 .watch-courses__left {
   width: 50%;
-  background: url("./assets/watch.png") no-repeat;
+  background: url("./assets/WatchBackground.png") no-repeat;
   height: 500px;
   min-height: 30px;
   background-size: contain;
@@ -246,10 +246,10 @@
   font-weight: 700;
   line-height: 1.5rem;
   letter-spacing: 0.0125rem;
-}
+} */
 
 /**/
-
+/* 
 .our-popular {
   padding: 50px 0;
   height: 70vh;
@@ -317,10 +317,8 @@
 }
 
 .our-popular__right {
-  /* display: flex; */
   width: 100%;
   gap: 20px;
-  /* overflow-x: auto; */
   margin-bottom: 20px;
 }
 
@@ -358,10 +356,10 @@
   .our-popular__wrapper {
     width: 100%;
   }
-}
+} */
 
 /**/
-
+/* 
 .every-client-matter {
   padding: 50px 0;
 }
@@ -526,7 +524,7 @@
   .every-client-matter__cards {
     padding: 1rem 0;
   }
-}
+} */
 
 /**/
 

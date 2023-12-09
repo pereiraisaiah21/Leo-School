@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
 
-import Background1 from "../../assets/product.png"
+import ProductImage from "../../assets/ProductImage.png"
 
 /**
  * 
@@ -31,7 +31,7 @@ export const ClientMatter = () => {
                     >
                         <SwiperSlide>
                             <div className="every-client-matter__card">
-                                <img src={Background1} alt="Client Matter Image 1" />
+                                <img src={ProductImage} alt="Client Matter Image 1" />
                                 <div className="every-client-matter__info">
                                     <div className="every-client-matter__seal">
                                         Sale
@@ -65,7 +65,7 @@ export const ClientMatter = () => {
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="every-client-matter__card">
-                                <img src={Background1} alt="Client Matter Image 1" />
+                                <img src={ProductImage} alt="Client Matter Image 1" />
                                 <div className="every-client-matter__info">
                                     <div className="every-client-matter__seal">
                                         Sale
@@ -99,7 +99,7 @@ export const ClientMatter = () => {
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="every-client-matter__card">
-                                <img src={Background1} alt="Client Matter Image 1" />
+                                <img src={ProductImage} alt="Client Matter Image 1" />
                                 <div className="every-client-matter__info">
                                     <div className="every-client-matter__seal">
                                         Sale
