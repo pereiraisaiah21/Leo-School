@@ -1,27 +1,32 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
 import Background from "./assets/background.png"
 import Background1 from "./assets/product.png"
 import { FaBars } from "react-icons/fa"
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+
 function App() {
+
+  const windowWidth = window.innerWidth;
 
   return (
     <>
 
-      <header class="header">
-        <div class="header__wrapper">
-          <div class="header__brand">Brand Name</div>
-          <nav class="header__pages">
+      <header className="header">
+        <div className="header__wrapper">
+          <div className="header__brand">Brand Name</div>
+          <nav className="header__pages">
             <a href="#">Home</a>
             <a href="#">About</a>
             <a href="#">Contact</a>
           </nav>
-          <div class="header__buttons">
-            <button class="header__button">Login</button>
-            <button class="header__button header__button--join">Join us</button>
+          <div className="header__buttons">
+            <button className="header__button">Login</button>
+            <button className="header__button header__button--join">Join us</button>
           </div>
-          <button class="header__mobile-button"><FaBars /></button>
+          <button className="header__mobile-button"><FaBars /></button>
         </div>
       </header>
 
@@ -55,29 +60,42 @@ function App() {
         </div>
       </section>
 
-      <section class="our-popular">
-        <div class="our-popular__wrapper">
-          <div class="our-popular__left">
-            <h2 class="our-popular__title">Our Popular</h2>
-            <p class="our-popular__description">Discover our most popular courses and join thousands of learners who have benefited from our expert-led content. Take your skills to the next level.</p>
-            <button class="our-popular__button">Explore Courses</button>
+      <section className="our-popular">
+        <div className="our-popular__wrapper">
+          <div className="our-popular__left">
+            <h2 className="our-popular__title">Our Popular</h2>
+            <p className="our-popular__description">Discover our most popular courses and join thousands of learners who have benefited from our expert-led content. Take your skills to the next level.</p>
+            <button className="our-popular__button">Explore Courses</button>
           </div>
-          <div class="our-popular__right">
-            <div class="our-popular__card">
-              <img src="your-image-url1.jpg" alt="Popular Course 1" />
-              <h3 class="our-popular__name">Training Courses</h3>
-              <p class="our-popular__card-description">The gradual accumulation of information about </p>
-            </div>
-            <div class="our-popular__card">
-              <img src="your-image-url2.jpg" alt="Popular Course 2" />
-              <h3 class="our-popular__name">2,769 online courses	</h3>
-              <p class="our-popular__card-description">The gradual accumulation of information about </p>
-            </div>
-            <div class="our-popular__card">
-              <img src="your-image-url2.jpg" alt="Popular Course 2" />
-              <h3 class="our-popular__name">Books Library	</h3>
-              <p class="our-popular__card-description">The gradual accumulation of information about </p>
-            </div>
+          <div className="our-popular__right">
+
+          <Swiper
+            slidesPerView={windowWidth > 778 ? 1 : 1}
+            onSlideChange={() => console.log('slide change')}
+            onSwiper={(swiper) => console.log(swiper)}
+          >
+            <SwiperSlide>
+              <div className="our-popular__card">
+                <img src="your-image-url1.jpg" alt="Popular Course 1" />
+                <h3 className="our-popular__name">Training Courses</h3>
+                <p className="our-popular__card-description">The gradual accumulation of information about </p>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="our-popular__card">
+                <img src="your-image-url2.jpg" alt="Popular Course 2" />
+                <h3 className="our-popular__name">2,769 online courses	</h3>
+                <p className="our-popular__card-description">The gradual accumulation of information about </p>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="our-popular__card">
+                <img src="your-image-url2.jpg" alt="Popular Course 2" />
+                <h3 className="our-popular__name">Books Library	</h3>
+                <p className="our-popular__card-description">The gradual accumulation of information about </p>
+              </div>
+            </SwiperSlide>
+          </Swiper>
           </div>
         </div>
       </section>
@@ -88,57 +106,70 @@ function App() {
           <h2 className="every-client-matter__title">Title</h2>
           <p className="every-client-matter__short-description">Problems trying to resolve the conflict between  the two major realms of Classical physics: Newtonian mechanics </p>
           <div className="every-client-matter__cards">
-            <div className="every-client-matter__card">
-              <img src={Background1} alt="Client Matter Image 1" />
-              <div className="every-client-matter__info">
-                <div className="every-client-matter__seal">Sale</div>
-                <header className="every-client-matter__header">
-                  <span className="every-client-matter__join-us">Join Us</span>
-                  <div className="every-client-matter__star-rating">
-                    <span className="every-client-matter__star">&#9733;</span>
-                    <span className="every-client-matter__rating-note">4.5</span>
-                  </div>
-                </header>
-                <h3 className="every-client-matter__card-title">Card Title 1</h3>
-                <p className="every-client-matter__card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <p className="every-client-matter__download">Downloads: 1000+</p>
-                <button className="every-client-matter__learn-more">Learn More</button>
+
+          <Swiper
+            slidesPerView={windowWidth > 778 ? 1 : 1}
+            onSlideChange={() => console.log('slide change')}
+            onSwiper={(swiper) => console.log(swiper)}
+          >
+            <SwiperSlide>
+              <div className="every-client-matter__card">
+                <img src={Background1} alt="Client Matter Image 1" />
+                <div className="every-client-matter__info">
+                  <div className="every-client-matter__seal">Sale</div>
+                  <header className="every-client-matter__header">
+                    <span className="every-client-matter__join-us">Join Us</span>
+                    <div className="every-client-matter__star-rating">
+                      <span className="every-client-matter__star">&#9733;</span>
+                      <span className="every-client-matter__rating-note">4.5</span>
+                    </div>
+                  </header>
+                  <h3 className="every-client-matter__card-title">Card Title 1</h3>
+                  <p className="every-client-matter__card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <p className="every-client-matter__download">Downloads: 1000+</p>
+                  <button className="every-client-matter__learn-more">Learn More</button>
+                </div>
               </div>
-            </div>
-            <div className="every-client-matter__card">
-              <img src={Background1} alt="Client Matter Image 2" />
-              <div className="every-client-matter__info">
-                <div className="every-client-matter__seal">Sale</div>
-                <header className="every-client-matter__header">
-                  <span className="every-client-matter__join-us">Join Us</span>
-                  <div className="every-client-matter__star-rating">
-                    <span className="every-client-matter__star">&#9733;</span>
-                    <span className="every-client-matter__rating-note">4.5</span>
-                  </div>
-                </header>
-                <h3 className="every-client-matter__card-title">Card Title 2</h3>
-                <p className="every-client-matter__card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <p className="every-client-matter__download">Downloads: 800+</p>
-                <button className="every-client-matter__learn-more">Learn More</button>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="every-client-matter__card">
+                <img src={Background1} alt="Client Matter Image 2" />
+                <div className="every-client-matter__info">
+                  <div className="every-client-matter__seal">Sale</div>
+                  <header className="every-client-matter__header">
+                    <span className="every-client-matter__join-us">Join Us</span>
+                    <div className="every-client-matter__star-rating">
+                      <span className="every-client-matter__star">&#9733;</span>
+                      <span className="every-client-matter__rating-note">4.5</span>
+                    </div>
+                  </header>
+                  <h3 className="every-client-matter__card-title">Card Title 2</h3>
+                  <p className="every-client-matter__card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <p className="every-client-matter__download">Downloads: 800+</p>
+                  <button className="every-client-matter__learn-more">Learn More</button>
+                </div>
               </div>
-            </div>
-            <div className="every-client-matter__card">
-              <img src={Background1} alt="Client Matter Image 3" />
-              <div className="every-client-matter__info">
-                <div className="every-client-matter__seal">Sale</div>
-                <header className="every-client-matter__header">
-                  <span className="every-client-matter__join-us">Join Us</span>
-                  <div className="every-client-matter__star-rating">
-                    <span className="every-client-matter__star">&#9733;</span>
-                    <span className="every-client-matter__rating-note">4.5</span>
-                  </div>
-                </header>
-                <h3 className="every-client-matter__card-title">Card Title 3</h3>
-                <p className="every-client-matter__card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <p className="every-client-matter__download">Downloads: 1200+</p>
-                <button className="every-client-matter__learn-more">Learn More</button>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="every-client-matter__card">
+                <img src={Background1} alt="Client Matter Image 3" />
+                <div className="every-client-matter__info">
+                  <div className="every-client-matter__seal">Sale</div>
+                  <header className="every-client-matter__header">
+                    <span className="every-client-matter__join-us">Join Us</span>
+                    <div className="every-client-matter__star-rating">
+                      <span className="every-client-matter__star">&#9733;</span>
+                      <span className="every-client-matter__rating-note">4.5</span>
+                    </div>
+                  </header>
+                  <h3 className="every-client-matter__card-title">Card Title 3</h3>
+                  <p className="every-client-matter__card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <p className="every-client-matter__download">Downloads: 1200+</p>
+                  <button className="every-client-matter__learn-more">Learn More</button>
+                </div>
               </div>
-            </div>
+            </SwiperSlide>
+          </Swiper>
           </div>
         </div>
       </section>
@@ -149,63 +180,97 @@ function App() {
           <h2 className="testimonials__title">Quality Education</h2>
           <p className="testimonials__description">What our learners say about the quality of education provided.</p>
           <div className="testimonials__cards">
-            <div className="testimonials__card">
-              <div className="testimonials__rating">
-                <span className="testimonials__star">&#9733;</span>
-                <span className="testimonials__star">&#9733;</span>
-                <span className="testimonials__star">&#9733;</span>
-                <span className="testimonials__star">&#9733;</span>
-                <span className="testimonials__star">&#9733;</span>
-              </div>
-              <p className="testimonials__commentary">"Exceptional courses! The content is well-structured and the instructors are knowledgeable. Highly recommended!"</p>
-              <div className="testimonials__info">
-                <div className="testimonials__icon">
 
+          <Swiper
+            slidesPerView={windowWidth > 778 ? 1 : 1}
+            onSlideChange={() => console.log('slide change')}
+            onSwiper={(swiper) => console.log(swiper)}
+          >
+            <SwiperSlide>
+              <div className="testimonials__card">
+                <div className="testimonials__rating">
+                  <span className="testimonials__star">&#9733;</span>
+                  <span className="testimonials__star">&#9733;</span>
+                  <span className="testimonials__star">&#9733;</span>
+                  <span className="testimonials__star">&#9733;</span>
+                  <span className="testimonials__star">&#9733;</span>
                 </div>
-                <div className="testimonials__details">
-                  <p className="testimonials__name">John Doe</p>
-                  <p className="testimonials__profile">Web Developer</p>
-                </div>
-              </div>
-            </div>
-            <div className="testimonials__card">
-              <div className="testimonials__rating">
-                <span className="testimonials__star">&#9733;</span>
-                <span className="testimonials__star">&#9733;</span>
-                <span className="testimonials__star">&#9733;</span>
-                <span className="testimonials__star">&#9733;</span>
-                <span className="testimonials__star">&#9733;</span>
-              </div>
-              <p className="testimonials__commentary">"Exceptional courses! The content is well-structured and the instructors are knowledgeable. Highly recommended!"</p>
-              <div className="testimonials__info">
-                <div className="testimonials__icon">
+                <p className="testimonials__commentary">"Exceptional courses! The content is well-structured and the instructors are knowledgeable. Highly recommended!"</p>
+                <div className="testimonials__info">
+                  <div className="testimonials__icon">
 
-                </div>
-                <div className="testimonials__details">
-                  <p className="testimonials__name">John Doe</p>
-                  <p className="testimonials__profile">Web Developer</p>
+                  </div>
+                  <div className="testimonials__details">
+                    <p className="testimonials__name">John Doe</p>
+                    <p className="testimonials__profile">Web Developer</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="testimonials__card">
-              <div className="testimonials__rating">
-                <span className="testimonials__star">&#9733;</span>
-                <span className="testimonials__star">&#9733;</span>
-                <span className="testimonials__star">&#9733;</span>
-                <span className="testimonials__star">&#9733;</span>
-                <span className="testimonials__star">&#9733;</span>
-              </div>
-              <p className="testimonials__commentary">"Exceptional courses! The content is well-structured and the instructors are knowledgeable. Highly recommended!"</p>
-              <div className="testimonials__info">
-                <div className="testimonials__icon">
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="testimonials__card">
+                <div className="testimonials__rating">
+                  <span className="testimonials__star">&#9733;</span>
+                  <span className="testimonials__star">&#9733;</span>
+                  <span className="testimonials__star">&#9733;</span>
+                  <span className="testimonials__star">&#9733;</span>
+                  <span className="testimonials__star">&#9733;</span>
+                </div>
+                <p className="testimonials__commentary">"Exceptional courses! The content is well-structured and the instructors are knowledgeable. Highly recommended!"</p>
+                <div className="testimonials__info">
+                  <div className="testimonials__icon">
 
-                </div>
-                <div className="testimonials__details">
-                  <p className="testimonials__name">John Doe</p>
-                  <p className="testimonials__profile">Web Developer</p>
+                  </div>
+                  <div className="testimonials__details">
+                    <p className="testimonials__name">John Doe</p>
+                    <p className="testimonials__profile">Web Developer</p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="testimonials__card">
+                <div className="testimonials__rating">
+                  <span className="testimonials__star">&#9733;</span>
+                  <span className="testimonials__star">&#9733;</span>
+                  <span className="testimonials__star">&#9733;</span>
+                  <span className="testimonials__star">&#9733;</span>
+                  <span className="testimonials__star">&#9733;</span>
+                </div>
+                <p className="testimonials__commentary">"Exceptional courses! The content is well-structured and the instructors are knowledgeable. Highly recommended!"</p>
+                <div className="testimonials__info">
+                  <div className="testimonials__icon">
+
+                  </div>
+                  <div className="testimonials__details">
+                    <p className="testimonials__name">John Doe</p>
+                    <p className="testimonials__profile">Web Developer</p>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="testimonials__card">
+                <div className="testimonials__rating">
+                  <span className="testimonials__star">&#9733;</span>
+                  <span className="testimonials__star">&#9733;</span>
+                  <span className="testimonials__star">&#9733;</span>
+                  <span className="testimonials__star">&#9733;</span>
+                  <span className="testimonials__star">&#9733;</span>
+                </div>
+                <p className="testimonials__commentary">"Exceptional courses! The content is well-structured and the instructors are knowledgeable. Highly recommended!"</p>
+                <div className="testimonials__info">
+                  <div className="testimonials__icon">
+
+                  </div>
+                  <div className="testimonials__details">
+                    <p className="testimonials__name">John Doe</p>
+                    <p className="testimonials__profile">Web Developer</p>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+          </Swiper>
           </div>
         </div>
       </section>

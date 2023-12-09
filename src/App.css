@@ -252,7 +252,7 @@
 
 .our-popular {
   padding: 50px 0;
-  height: auto;
+  height: 70vh;
   display: flex;
   align-items: center;
   background-color: #ff7b52;
@@ -317,14 +317,15 @@
 }
 
 .our-popular__right {
-  display: flex;
+  /* display: flex; */
+  width: 100%;
   gap: 20px;
-  overflow-x: auto;
+  /* overflow-x: auto; */
   margin-bottom: 20px;
 }
 
 .our-popular__card {
-  max-width: 300px;
+  max-width: 100%;
   border: 1px solid #ccc;
   border-radius: 8px;
   overflow: hidden;
@@ -350,6 +351,12 @@
 @media only screen and (min-width: 600px) {
   .our-popular__wrapper {
     flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .our-popular__wrapper {
+    width: 100%;
   }
 }
 
