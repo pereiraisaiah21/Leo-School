@@ -14,13 +14,13 @@ Before you begin, make sure you have Node.js and npm installed on your machine.
 1. Clone this repository:
 
     ```bash
-    git clone https://github.com/your-user/leo-school-landing-page.git
+    git clone https://github.com/pereiraisaiah21/Leo-School.git
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd leo-school-landing-page
+    cd Leo-School
     ```
 
 3. Install the dependencies:
