@@ -62,7 +62,7 @@
 
     &__right {
         width: 50%;
-        background: url("./assets/HeadlineBackground.png") no-repeat;
+        background: url("../../assets/HeadlineBackground.png") no-repeat;
         height: 500px;
         min-height: 30px;
         background-size: cover;
@@ -76,9 +76,9 @@
 
     @media only screen and (max-width: 600px) {
         padding: 3rem 1rem;
-        background: url("./assets/HeadlineBackground.png") no-repeat;
+        background: url("../../assets/HeadlineBackground.png") no-repeat;
         background-size: contain;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/HeadlineBackground.png');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/HeadlineBackground.png');
 
         &__left {
             width: 100%;

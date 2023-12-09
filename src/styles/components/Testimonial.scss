@@ -1,0 +1,106 @@
+.testimonials {
+    padding: 50px 0;
+    height: 100vh;
+    background-color: #8d5cf6;
+
+    &__wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    &__subtitle {
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.5rem;
+        letter-spacing: 0.0125rem;
+    }
+
+    &__title {
+        color: var(--light-text-color, #FFF);
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 3.125rem;
+        letter-spacing: 0.0125rem;
+        margin: .63rem 0;
+    }
+
+    &__description {
+        color: var(--light-text-color, #FFF);
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.25rem;
+        letter-spacing: 0.0125rem;
+        margin-bottom: 5rem;
+    }
+
+    &__cards {
+        display: flex;
+        gap: .63rem;
+    }
+
+    &__card {
+        width: 100%;
+        background-color: #FFF;
+        overflow: hidden;
+        padding: 3.44rem 1.56rem 1.56rem;
+    }
+
+    &__commentary {
+        color: var(--second-text-color, #737373);
+        text-align: center;
+        width: 9.9375rem;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.25rem;
+        letter-spacing: 0.0125rem;
+        margin: .94rem auto 1.87rem;
+    }
+
+    &__rating {
+        display: flex;
+        justify-content: center;
+        color: #ffd700;
+        font-size: 1.5em;
+        margin-bottom: 10px;
+
+        &__star {
+            margin-right: 5px;
+        }
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &__icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #333;
+            margin-right: 10px;
+        }
+
+        &__details {
+            color: #333;
+        }
+
+        &__name {
+            font-weight: bold;
+            margin: 0;
+        }
+
+        &__profile {
+            margin: 0;
+            color: #666;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        padding: 2rem 1rem;
+    }
+}

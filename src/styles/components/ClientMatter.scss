@@ -41,113 +41,114 @@
         gap: 0.625rem;
         align-self: stretch;
 
-        &__card {
-            overflow: hidden;
-            position: relative;
-            margin-top: 20px;
-            background-color: #FFF;
+    }
 
-            img {
-                max-width: 100%;
-                height: auto;
+    &__card {
+        overflow: hidden;
+        position: relative;
+        margin-top: 20px;
+        background-color: #FFF;
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    &__info {
+        padding: 1.56rem 1.56rem 2.19rem;
+
+        &__seal {
+            border-radius: 0.1875rem;
+            background: var(--danger-color, #E74040);
+            padding: .3rem .62rem;
+            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
+            position: absolute;
+            top: 1.25rem;
+            left: 1.25rem;
+        }
+
+        &__header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__join-us {
+            color: var(--primary-text-color, #8D5CF6);
+            font-size: 0.875rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 1.5rem;
+            letter-spacing: 0.0125rem;
+        }
+
+        &__star-rating {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: .3rem;
+            border-radius: 1.25rem;
+            background: var(--dark-background-color, #26335D);
+
+            &__star {
+                color: #ffd700;
+                width: 1rem;
+                height: 1rem;
             }
 
-            &__info {
-                padding: 1.56rem 1.56rem 2.19rem;
-
-                &__seal {
-                    border-radius: 0.1875rem;
-                    background: var(--danger-color, #E74040);
-                    padding: .3rem .62rem;
-                    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
-                    position: absolute;
-                    top: 1.25rem;
-                    left: 1.25rem;
-                }
-
-                &__header {
-                    display: flex;
-                    justify-content: space-between;
-                }
-
-                &__join-us {
-                    color: var(--primary-text-color, #8D5CF6);
-                    font-size: 0.875rem;
-                    font-style: normal;
-                    font-weight: 700;
-                    line-height: 1.5rem;
-                    letter-spacing: 0.0125rem;
-                }
-
-                &__star-rating {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    padding: .3rem;
-                    border-radius: 1.25rem;
-                    background: var(--dark-background-color, #26335D);
-
-                    &__star {
-                        color: #ffd700;
-                        width: 1rem;
-                        height: 1rem;
-                    }
-
-                    &__rating-note {
-                        color: var(--light-text-color, #FFF);
-                        font-size: 0.75rem;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: 1rem;
-                        letter-spacing: 0.0125rem;
-                    }
-                }
-            }
-
-            &__card-title {
-                color: var(--text-color, #252B42);
-                font-size: 1rem;
-                font-style: normal;
-                font-weight: 700;
-                line-height: 1.5rem;
-                letter-spacing: 0.00625rem;
-            }
-
-            &__card-description {
-                color: var(--second-text-color, #737373);
-                font-size: 0.875rem;
+            &__rating-note {
+                color: var(--light-text-color, #FFF);
+                font-size: 0.75rem;
                 font-style: normal;
                 font-weight: 400;
-                line-height: 1.25rem;
-                margin: .63rem 0;
-                letter-spacing: 0.0125rem;
-            }
-
-            &__download {
-                color: var(--second-text-color, #737373);
-                font-size: 0.875rem;
-                font-style: normal;
-                font-weight: 700;
-                line-height: 1.5rem;
-                letter-spacing: 0.0125rem;
-            }
-
-            &__learn-more {
-                background-color: unset;
-                color: #fff;
-                padding: .62rem 1.25rem;
-                margin-top: 10px;
-                cursor: pointer;
-                border-radius: 2.3125rem;
-                border: 1px solid var(--primary-color, #8D5CF6);
-                color: var(--primary-color, #8D5CF6);
-                font-size: 0.875rem;
-                font-style: normal;
-                font-weight: 700;
-                line-height: 1.5rem;
+                line-height: 1rem;
                 letter-spacing: 0.0125rem;
             }
         }
+    }
+
+    &__card-title {
+        color: var(--text-color, #252B42);
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.5rem;
+        letter-spacing: 0.00625rem;
+    }
+
+    &__card-description {
+        color: var(--second-text-color, #737373);
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.25rem;
+        margin: .63rem 0;
+        letter-spacing: 0.0125rem;
+    }
+
+    &__download {
+        color: var(--second-text-color, #737373);
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.5rem;
+        letter-spacing: 0.0125rem;
+    }
+
+    &__learn-more {
+        background-color: unset;
+        color: #fff;
+        padding: .62rem 1.25rem;
+        margin-top: 10px;
+        cursor: pointer;
+        border-radius: 2.3125rem;
+        border: 1px solid var(--primary-color, #8D5CF6);
+        color: var(--primary-color, #8D5CF6);
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.5rem;
+        letter-spacing: 0.0125rem;
     }
 
     @media only screen and (max-width: 600px) {

@@ -1,0 +1,94 @@
+.footer {
+    background-color: #fff;
+    color: #fff;
+    padding: 50px 0;
+
+    &__wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    &__pages {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__section {
+        flex: 1;
+        margin-bottom: 20px;
+
+        &-title {
+            color: var(--text-color, #252B42);
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 1.5rem;
+            letter-spacing: 0.00625rem;
+            margin-bottom: 0.63rem;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li a {
+                padding: .62rem 0;
+                color: var(--second-text-color, #737373);
+                font-size: 0.875rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 1.5rem;
+                letter-spacing: 0.0125rem;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+
+        &__made-with-love,
+        &__social-icons {
+            width: 100%;
+            text-align: center;
+        }
+
+        &__made-with-love {
+            color: var(--second-text-color, #737373);
+            font-size: 0.875rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 1.5rem;
+            letter-spacing: 0.0125rem;
+        }
+
+        &__social-icons {
+            display: flex;
+            gap: 10px;
+
+            &__icon img {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        padding: 2rem 1rem;
+
+        &__section {
+            width: 50%;
+            flex: auto;
+        }
+
+        &__bottom {
+            flex-wrap: wrap;
+        }
+    }
+}

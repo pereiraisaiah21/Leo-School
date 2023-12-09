@@ -528,7 +528,7 @@
 
 /**/
 
-.testimonials {
+/* .testimonials {
   padding: 50px 0;
   height: 100vh;
   background-color: #8d5cf6;
@@ -635,11 +635,11 @@
   .testimonials {
     padding: 2rem 1rem;
   }
-}
+} */
 
 /**/
 
-.faq {
+/* .faq {
   padding: 50px 0;
   height: 60vh;
 }
@@ -727,10 +727,10 @@
   .faq__card {
     width: 100%;
   }
-}
+} */
 /**/
 
-.newsletter {
+/* .newsletter {
   padding: 50px 0;
   height: 100vh;
   display: flex;
@@ -817,11 +817,11 @@
   .newsletter__input {
     width: auto;
   }
-}
+} */
 
 /**/
 
-.footer {
+/* .footer {
   background-color: #fff;
   color: #fff;
   padding: 50px 0;
@@ -921,4 +921,4 @@
     width: 100%;
     text-align: center;
   }
-}
+} */

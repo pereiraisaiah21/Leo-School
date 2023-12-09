@@ -1,4 +1,13 @@
-
+@import "./components/Banner.scss",
+        "./components/ClientMatter.scss",
+        "./components/FAQ.scss",
+        "./components/Footer.scss",
+        "./components/Header.scss",
+        "./components/Newsletter.scss",
+        "./components/OurPopular.scss",
+        "./components/Testimonial.scss",
+        "./components/WatchOur.scss",
+        "reset.scss";
 
 :root {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

@@ -9,7 +9,7 @@ import { FAQ } from './components/FAQ/FAQ';
 import { Newsletter } from './components/Newsletter/Newsletter'
 import { Footer } from './components/Footer/Footer'
 
-import './App.css'
+import './styles/main.scss'
 import 'swiper/css'
 
 /**
