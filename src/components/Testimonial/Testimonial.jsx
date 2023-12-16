@@ -27,8 +27,29 @@ export const Testimonial = () => {
                 <div className="testimonials__cards">
 
                     <Swiper
-                        slidesPerView={windowWidth > 778 ? 1 : 1}
+                        slidesPerView={windowWidth > 778 ? 4 : 1}
+                        spaceBetween={16}
                     >
+                        <SwiperSlide>
+                            <div className="testimonials__card">
+                                <div className="testimonials__rating">
+                                    <span className="testimonials__star">&#9733;</span>
+                                    <span className="testimonials__star">&#9733;</span>
+                                    <span className="testimonials__star">&#9733;</span>
+                                    <span className="testimonials__star">&#9733;</span>
+                                    <span className="testimonials__star">&#9733;</span>
+                                </div>
+                                <p className="testimonials__commentary">"Exceptional courses! The content is well-structured and the instructors are knowledgeable. Highly recommended!"</p>
+                                <div className="testimonials__info">
+                                    <div className="testimonials__icon">
+                                    </div>
+                                    <div className="testimonials__details">
+                                        <p className="testimonials__name">John Doe</p>
+                                        <p className="testimonials__profile">Web Developer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </SwiperSlide>
                         <SwiperSlide>
                             <div className="testimonials__card">
                                 <div className="testimonials__rating">

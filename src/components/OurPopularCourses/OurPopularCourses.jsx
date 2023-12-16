@@ -28,11 +28,12 @@ export const OurPopularCourses = () => {
                 </div>
                 <div className="our-popular__right">
                     <Swiper
-                        slidesPerView={windowWidth > 778 ? 1 : 1}
+                        slidesPerView={windowWidth > 778 ? 3 : 1}
+                        spaceBetween={16}
                     >
                         <SwiperSlide>
                             <div className="our-popular__card">
-                                <img src="your-image-url1.jpg" alt="Popular Course 1" />
+                                <img src="https://via.placeholder.com/300x300" alt="Popular Course 1" />
                                 <h3 className="our-popular__name">
                                     Training Cour
                                 es</h3>
@@ -43,7 +44,7 @@ export const OurPopularCourses = () => {
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="our-popular__card">
-                                <img src="your-image-url2.jpg" alt="Popular Course 2" />
+                                <img src="https://via.placeholder.com/300x300" alt="Popular Course 2" />
                                 <h3 className="our-popular__name">
                                     2,769 online 
                                 ourses	</h3>
@@ -54,7 +55,7 @@ export const OurPopularCourses = () => {
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="our-popular__card">
-                                <img src="your-image-url2.jpg" alt="Popular Course 2" />
+                                <img src="https://via.placeholder.com/300x300" alt="Popular Course 2" />
                                 <h3 className="our-popular__name">
                                     Books Library
                                 </h3>
